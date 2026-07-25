@@ -1,1 +1,114 @@
+/* INKORA — Dedicated Shop Page Styling */
 
+/* Page Background & Global Style */
+body {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Banner */
+.shop-header {
+    text-align: center;
+    padding: 50px 20px 20px;
+}
+
+.shop-header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.shop-header p {
+    color: #888888;
+    font-size: 1.1rem;
+}
+
+/* Products Grid System */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Product Card Styling */
+.product-card {
+    background-color: #141414;
+    border: 1px solid #222222;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    border-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.05);
+}
+
+/* Product Image Box */
+.product-image {
+    width: 100%;
+    height: 300px;
+    background-color: #1a1a1a;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+/* Details Section */
+.product-info {
+    padding: 20px;
+    text-align: right;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    color: #bbbbbb;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Buy Button */
+.btn-add-cart {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-add-cart:hover {
+    background-color: #e0e0e0;
+}
+
+.btn-add-cart:active {
+    transform: scale(0.98);
+}
